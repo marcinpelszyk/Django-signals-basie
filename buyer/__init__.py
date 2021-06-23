@@ -1,2 +1,2 @@
-default_app_confing = 'buyer.apps.BuyerConfig'
+default_app_config = 'buyer.apps.BuyerConfig'
 

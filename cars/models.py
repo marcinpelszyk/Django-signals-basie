@@ -1,7 +1,6 @@
 from django.db import models
-
 from buyer.models import Buyer
-
+import uuid
 
 class Car(models.Model):
     name = models.CharField(max_length=200)
@@ -12,3 +11,9 @@ class Car(models.Model):
 
     def __str__(self):
         return f'{self.name}--{self.price}  {self.buyer}'
+
+    # def save(self, *args, **kwargs):
+    #     if self.code == "":
+    #         self.code = str(uuid.uuid4()).replace("-", "").upper()[:10]
+    #     return super().save(*args, **kwargs)
+

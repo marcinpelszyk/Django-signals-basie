@@ -28,6 +28,8 @@ INSTALLED_APPS = [
     # APP 
     'postss',
     'profiles',
+    # 3rd 
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [

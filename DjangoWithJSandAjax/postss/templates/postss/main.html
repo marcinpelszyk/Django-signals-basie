@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block scripts %}
+    <script src="{% static 'postss/main.js'%}" defer></script>
+{% endblock %}
+
+
+
+
+{% block title %}
+    Posts
+{% endblock %}
+
+{% block content %}
+    <div class="table">
+        {% for post in posts %}
+        <ul>
+            <li>{{ post.title }} - {{ post.body }}</li> <br>
+
+        </ul>
+        {% endfor %}
+    </div>
+    <div id="hello">Hellosdsasa</div>
+
+
+{% endblock  %}

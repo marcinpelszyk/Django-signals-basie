@@ -7,5 +7,6 @@ app_name = 'postss'
 
 
 urlpatterns = [
-    
+    path('', views.post_list_and_create, name='main'),
+    path('hello/', views.hello, name='hello'),
 ]
